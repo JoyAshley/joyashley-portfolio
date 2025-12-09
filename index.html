@@ -7,26 +7,124 @@
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 <body>
+    <!--navigations-->
     <nav>
         <div class="logo">Joy Ashley</div>
     
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
     </nav>
+
+    <!--hero sections-->
     <section class="hero">
         <h1>Hi, I am Joy Ashley</h1>
         <p>Frontend Developer & Creative Builder</p>
-        <button class="btnOne" onclick="window.location.href='project.html'">View Projects</button>
-        <button class="btnTwo" onclick="window.location.href='contact.html'">Get in Touch</button>
+        <button class="btnOne" onclick="window.location.href='#project'">View Projects</button>
+        <button class="btnTwo" onclick="window.location.href='#contact'">Get in Touch</button>
     </section>
 
+
+  <!-- about section-->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+            <img src="asset/image/joy.jpeg" alt="Joy Ashley">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p class="p1">Hi, I'm Joy Ashley, a Front-End Developer who loves creating clean, responsive, and user-friendly websites. I turn ideas into interactive digital experiences, blending design and functionality seamlessly.</p>
+                <p class="p2">I'm always learning, exploring new web technologies, and improving my craft to build websites that are not only functional but enjoyable to use.</p>
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Projects section-->
+<section id="project">
+  <h2 class="project-title">Projects</h2>
+
+  <div class="projects-container">
+
+        <div class="project-card">
+            <img src="asset/image/project1.png" alt="">
+            <h3>Dummy content Page</h3>
+            <p>This is a dummy website</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="asset/image/project1.png" alt="">
+            <h3>Image Slider</h3>
+            <p></p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="asset/image/project1.png" alt="">
+            <h3>Other</h3>
+            <p>This is another website</p>
+
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+
+  </div>
+</section>
+
+
+
+    <!-- contact section-->
+ <section id="contact">
+    
+        <h2 class="contact-title">Get In Touch</h2>
+        <form class="contact-form">
+
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" placeholder="Leave message..." required></textarea>
+    </div>
+
+    <button type="submit" class="contact-btn">Send Message</button>
+
+  </form>
+ </section>
+
     <footer class="footer">
+    <div class="mainFooter">
+        <h2>Joy Ashley</h2>
+        <p>Frontend Developer & Creative Builder</p>
+    </div>
     <div class="foot">
-       <p> &copy 2025 Joy Ashley.  All rights reserved.</p>
+       <p> &copy Joy Ashley, All right reserved.</p>
     </div>
     </footer>
 </body>
